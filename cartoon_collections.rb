@@ -12,7 +12,7 @@ end
 
 def find_the_cheese(ingredients)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  ingredients.any? do |ingredient|
+  ingredients.each do |ingredient|
     cheese_types.each do |cheese|
       if ingredient == cheese
         return(cheese)
